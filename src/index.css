@@ -1,13 +1,519 @@
-body {
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: global font family start*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: global font family start*/
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: global style start*/
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a{
+    font-family: Poppins !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+.fas{
+    color: #ff3503;;
+}
+.mainButton{
+    background: #ff3503;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-family: "poppins";
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    border: 1px solid #ff3503;
+    cursor: pointer;
+}
+.mainButton:hover{
+    background: none;
+    color: #ff3503;
+    border: 1px solid #ff3503;
+}
+.miniButton{
+    background: #ff3503;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: "poppins";
+    padding: 5px 20px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    border: 1px solid #ff3503;
+    cursor: pointer;
+}
+.miniButton:hover{
+    background: #fff;
+    color: #ff3503;
+    border: 1px solid #ff3503;
+}
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: global style finished*/
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: menu btn style start*/
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: menu btn style finished*/
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: all related style start*/
+.about,
+.project,
+.skills,
+.services,
+.brands,
+.feedback,
+.contact,
+.footer {
+    font-family: "poppins", sans-serif;
+}
+.about, .project, .skills,.services,.brands,.feedback,.contact {
+    padding: 100px 0;
+}
+.about .title,.project .title,.skills .title,.services .title,.brands .title,.feedback .title,.contact .title {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+    font-family: "ubuntu", sans-serif;
+}
+.about .title::before,
+.project .title::before,
+.skills .title::before,
+.services .title::before,
+.brands .title::before,
+.feedback .title::before,
+.contact .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after,
+.project .title::after,
+.skills .title::after,
+.services .title::after,
+.brands .title::after,
+.feedback .title::after ,
+.contact .title::after {
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: #ff3503;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .about-content,
+.project .project-content,
+.skills .skills-content,
+.services .services-content,
+.brands .services-content,
+.feedback .feedback-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.project,
+.services,
+.feedback {
+    background: #111;
+    color: #fff;
+}
+.project .title::before,
+.services .title::before,
+.feedback .title::before
+{
+    background: #fff;
+}
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: all related style finished*/
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: responsive design start*/
+/* @media (max-width: 1440px) {
+    .home .max-width {
+        margin-left: 75px;
+    }
+} */
+@media (max-width: 1300px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 1104px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+    .about .about-content .left img {
+        width: 380px;
+        height: 350px;
+    }
 }
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding: 80px 0;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+        display: block;
+    }
+    .navbar .menu li {
+        display: block !important;
+        margin: 20px 0 !important;
+    }
+    /* menu btn styling */
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .about .about-content .column {
+        width: 100%;
+    }
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right {
+        flex: 100%;
+    }
+    .project .serv-content .card,
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+    }
+    .carousel-project .card .text{
+        font-size: 22px;
+    }
+    .carousel-project .card p{
+        font-size: 14px;
+    }
+    .project .button-section{
+        display: grid !important;
+    }
+    .project .button-section .button1,.button2{
+        margin: 5px 0;
+    }
+    /* skill section */
+    .skills .skills-content .column{
+        width: calc(50% - 40px) !important;
+    }
+    .skills .skills-content .left .text{
+        font-size: 22px !important;        
+    }
+    .skills .skills-content .left p{
+        font-size: 14px;
+    }
+    .skills .skills-content .left .button-section{
+        margin-top: 10px !important;
+    }
+    /* services section */
+    .carousel-services .card i{
+        font-size: 65px !important;
+    }
+    .carousel-services .card .text{
+        margin: 0px 0 7px 0 !important;
+        font-size: 20px !important;
+    }
+    .carousel-services .card p{
+        font-size: 14px;
+    }
+    .services .button-section{
+        padding: 20px 0 15px 0;
+    }
+    /* Contact section */
+    .contact .contact-content .column{
+        width: calc(50% - 40px) !important;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 50px !important;
+    }
+    /* banner section */
+    .home .home-content .text-2 {
+        font-size: 25px !important;
+    }
+    .home .home-content .text-2 .name {
+        font-size: 45px !important;
+    }
+    .home .home-content .text-3 {
+        font-size: 30px !important;
+    }
+    /* About Section */
+    .about .about-content .right .text{
+        flex-direction: column;
+    }
+    .about .about-content .button-section{
+        margin-top: 10px !important;
+    }
+    /* project section */
+    .project .serv-content .card {
+        width: 100%;
+        margin: 20px;
+    }
+    .project .button1,.button2{
+        font-size: 12px !important;
+    }
+    .carousel-project .card{
+        padding: 15px !important;
+        width: 50% !important;
+    }
+    /* skill section */
+    .skills .skills-content .column {
+        width: calc(100%) !important;
+        padding: 12px 0;
+    }
+    /* Services section */
+    .carousel-services .card i{
+        font-size: 55px !important;
+    }
+    .carousel-services .card .text{
+        font-size: 21px !important;
+    }
+    .carousel-services .card .text{
+        font-size: 10px;
+    }
+    .services .button-section {
+        padding: 10px 0 10px 0 !important;
+    }
+    .services .button{
+        font-size: 12px !important;
+    }
+    .carousel-services .swiper-wrapper .card{
+        width: 180px !important;
+        margin: 10px !important;
+    }
+    .carousel-services .swiper-wrapper{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    /* Brands section */
+    .brands .brands-card{
+        width: 30%!important;
+    }
+    /* Feedback section */
+    .feedback .carousel .card .img{
+        height: 100px !important;
+        width: 100px !important;
+    }
+    .feedback .carousel .card .text{
+        font-size: 20px;
+    }
+    .feedback .carousel .card .box p{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        content: 'prev';
+        font-size: 20px;
+    }
+    /* contact */
+    .contact .contact-content .column {
+        width: calc(100%) !important;
+    }
+}
+
+@media (max-width: 500px) {    
+    .max-width {
+        padding: 0 40px !important;
+    }
+    .home .home-content .text-2 {
+        font-size: 25px;
+    }
+    .home .home-content .text-2 .name {
+        font-size: 45px;
+    }
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+    .about .about-content .left img {
+        width: 300px;
+        height: 275px;
+    }
+    /* Feedback Section */    
+    .feedback .carousel .card img{  
+        height: 75px;
+        width: 75px;
+    }
+    .feedback .carousel .card .text{
+        font-size: 22px !important;
+    }
+    .feedback .carousel .card h3{
+        font-size: 18px;
+    }
+    .feedback .carousel .card .box p{
+        font-size: 14px;
+    }
+    .feedback .carousel .card img{
+        width: 30px;
+        height: 30px;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        font-size: 25px !important;
+    }
+}
+
+
+@media (max-width: 300px) {
+    /* combine css */
+    .about, .project, .skills, .services, .brands, .feedback, .contact {
+        padding: 50px 0;
+    }
+    .about .title, .project .title, .skills .title, .services .title, .brands .title, .feedback .title, .contact .title{
+        font-size: 30px;
+    }
+    .about .title::after, .project .title::after, .skills .title::after, .services .title::after, .brands .title::after, .feedback .title::after, .contact .title::after{
+        font-size: 15px;   
+    }
+    .about .title, .project .title, .skills .title, .services .title, .brands .title, .feedback .title, .contact .title{
+        margin-bottom: 45px;
+        padding-bottom: 20px;    
+    }
+    /* navigation section */
+    .max-width{
+        padding: 0 20px !important;
+    }
+    .navbar .logo a {
+        font-size: 30px;
+    }
+    .navbar {
+        padding: 20px 0 !important;
+    }
+    /* Banner section */
+    .home .home-content .text-2{
+        font-size: 20px;
+    }
+    .home .home-content .text-2 .name{
+        font-size: 30px !important;
+    }
+    .home .home-content .text-3 {
+        flex-direction: column;
+        font-size: 20px !important;
+    }
+    .home .home-content .text-3 .Typewriter__wrapper{
+        font-size: 25px;
+    }
+    .home .home-content a{
+        font-size: 15px !important;
+        padding: 5px 20px !important;
+    }
+    /* About Section */
+    .about .about-content .left img{
+       height: 200px !important;
+       width: auto !important;
+    }
+    .about .about-content .left {
+        margin: 0 auto 35px !important;
+    }
+    .about .about-content .right .text {
+        font-size: 19px;
+    }
+    .about .about-content .right p{
+        font-size: 14px;
+    }
+    .about .about-content .right a{
+        font-size: 15px !important;        
+        padding: 5px 10px !important;
+    }
+    /* Project Section */
+    .carousel-project .card {
+        width: 100% !important;
+    }
+    .project .button1, .button2 {
+        font-size: 15px !important;
+    }
+    /* Skill Section */
+    .skills .skills-content .left .text{
+        font-size: 20px !important;
+    }
+    .skills .skills-content .left a{
+        font-size: 15px !important;
+        padding: 5px 10px !important;
+    }
+    .skills .skills-content .right span{
+        font-size: 15px !important;
+    }
+    /* Services Section */
+    .services .button {
+        font-size: 15px !important;
+    }
+    /* Brand section */
+    .brands-card{
+        width: 50%!important;
+    }
+    /* Contact Section */
+    .contact .contact-content .left p {
+        font-size: 14px;
+    }
+    .contact .contact-content .row .info .sub-title {
+        font-size: 14px;
+    }
+    .contact .contact-content .right{
+        margin-top: 15px;
+    }
+    .contact .right form .fields{
+        display: block !important;
+    }
+    .contact .right form .email{
+        margin-left: 0 !important;
+    }
+    .contact .right form .field input, .contact .right form .textarea textarea {
+        font-size: 14px !important;
+    }
+    .contact .right form .field input, .contact .right form .textarea textarea{
+        height: 90% !important;
+    }
+    .contact .right form .field, .contact .right form .fields .field {
+        margin-bottom: 7px !important;
+    }
+    .contact .right form .button button{
+        font-size: 15px !important;
+        padding: 5px 10px !important;
+    }
+    /* Footer Section */
+    .footer span{
+        font-size: 14px !important;
+    }
+}
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: responsive design finished*/ 

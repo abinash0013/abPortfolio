@@ -1,0 +1,56 @@
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: navbar style start*/
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 20px 0;
+    /* background: transparent; */
+    background: black;
+    font-family: "ubuntu", sans-serif;
+}
+.navbar.sticky {
+    padding: 15px 0;
+    background: #ff3503;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span {
+    color: #ff3503;
+}
+.navbar.sticky .logo a span {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px 15px;
+}
+.navbar .menu li a:hover::before {
+    color: #ff3503;
+}
+/* .navbar.sticky .menu li a:hover::after {
+    color: #fff;
+    transition: all 0.3s ease;
+} */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: navbar style finished*/
