@@ -5,7 +5,7 @@ import "./Banner.css";
 import { motion } from "framer-motion";
 
 const Banner = () => {
-    const transition = { duration: 2, type: "spring" };
+//     const transition = { duration: 2, type: "spring" };
 
     return (
         <div className="home" id="home">
