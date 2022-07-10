@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import "./About.css";
 import Typewiter from "typewriter-effect";
 import profileImage from "./../../Images/profile.png";
+import Resume from "./../../Resume/Abinash-Resume-2022.pdf";
 import { motion } from "framer-motion";
 
 const About = () => {
