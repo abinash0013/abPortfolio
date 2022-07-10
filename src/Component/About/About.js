@@ -59,7 +59,7 @@ const About = () => {
                             following links.
                         </p>
                         <div className="button-section">
-                            <Link to="#" className="mainButton">
+                            <Link to={Resume} className="mainButton">
                                 Download CV
                             </Link>
                         </div>
