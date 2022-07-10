@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import "./About.css";
 import Typewiter from "typewriter-effect";
 import profileImage from "./../../Images/profile.png";
@@ -60,9 +60,17 @@ const About = () => {
                             following links.
                         </p>
                         <div className="button-section">
-                            <Link to={Resume} className="mainButton">
+//                             <Link to={Resume} className="mainButton">
+//                                 Download CV
+//                             </Link>
+                            <a
+                                href={Resume}
+                                className="mainButton"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 Download CV
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
