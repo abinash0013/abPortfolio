@@ -37,7 +37,7 @@ const Banner = () => {
                         </span>
                     </div>
                     <br />
-                    <Link to="#hireMe" className="mainButton">
+                    <Link to="contact" smooth={true} duration={1000} className="mainButton">
                         Hire Me
                     </Link>
                 </motion.div>
