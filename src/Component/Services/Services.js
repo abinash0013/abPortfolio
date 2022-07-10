@@ -59,9 +59,9 @@ const Services = () => {
                                         </div>
                                         <p>{Services.serviceDescription}</p>
                                         <div className="button-section">
-                                            <a className="miniButton">
+                                            <button className="miniButton">
                                                 Details
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </SwiperSlide>
