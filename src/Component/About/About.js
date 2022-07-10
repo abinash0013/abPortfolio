@@ -60,9 +60,6 @@ const About = () => {
                             following links.
                         </p>
                         <div className="button-section">
-//                             <Link to={Resume} className="mainButton">
-//                                 Download CV
-//                             </Link>
                             <a
                                 href={Resume}
                                 className="mainButton"
