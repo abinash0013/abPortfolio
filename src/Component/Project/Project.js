@@ -47,8 +47,8 @@ const Project = () => {
             projectName: "My Portfolio",
             projectDescription:
                 "It is my personal Portfolio Website Where I can showcase my all work, skill, and services that I have Provided till now.",
-            projectLink: "https://excellentcoachings.com/",
-            projectCode: "https://abinashSonar.herokuapp.com",
+            projectLink: "https://github.com/abinash0013/abportfolio",
+            projectCode: "https://abinashsonar.netlify.app/",
         },
     ];
     const transition = { duration: 2, type: "spring" };
