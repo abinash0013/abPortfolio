@@ -1,0 +1,37 @@
+.services .title::after {
+    background: #111;
+    content: "We Provide";
+}
+.carousel-services .card {
+    background: #222;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.services .card:hover {
+    background: #ff3503; 
+}
+.services .card:hover a{
+    border: 1px solid #fff;
+}
+.carousel-services .card .box {
+    transition: all 0.6s ease;
+}
+.carousel-services .card i{
+    font-size: 100px;
+    color: #ff3503;
+    transition: all 0.6s ease;
+}
+.carousel-services .card:hover i{
+    color: #fff;
+}
+.carousel-services .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.carousel-services .card p {
+    margin-bottom: 10px;
+}

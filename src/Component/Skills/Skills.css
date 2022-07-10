@@ -1,0 +1,63 @@
+.skills .title::after {
+    content: "what i know";
+}
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+/* .skills .skills-content .left .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p {
+    text-align: justify;
+} */
+.skills .skills-content .left img{
+    width: 100%;
+}
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    background: #ff3503;
+}
+.skills .skills-content .right .html::before {
+    width: 80%;
+}
+.skills .skills-content .right .css::before {
+    width: 70%;
+}
+.skills .skills-content .right .javascript::before {
+    width: 60%;
+}
+.skills .skills-content .right .reactjs::before {
+    width: 60%;
+}
+.skills .skills-content .right .php-mysql::before {
+    width: 70%;
+}
+/* .skills .skills-content .right .node-mongo::before {
+    width: 40%;
+} */
