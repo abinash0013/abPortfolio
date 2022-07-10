@@ -93,14 +93,16 @@ const Project = () => {
                                         <div className="button-section">
                                             <a
                                                 href={project.projectLink}
-                                                target="_blank"
+                                                // target="_blank"
+                                                target="noopener"
                                                 className="miniButton"
                                             >
                                                 Visit Website
                                             </a>
                                             <a
                                                 href={project.projectCode}
-                                                target="_blank"
+                                                // target="_blank"
+                                                target="noopener"
                                                 className="miniButton"
                                             >
                                                 View Code
