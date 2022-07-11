@@ -368,12 +368,16 @@ html {
         flex-wrap: wrap;
     }
     .about .about-content .left img {
-        width: 300px;
+        width: 250px;
         height: 275px;
     }  
     /* Project Section */
     .carousel-project .card{
         width: 100% !important;
+    }
+    /* Brand Section */
+    .brands .brands-card {
+        width: 50%!important;
     }
     /* Services Section */
     .carousel-services .swiper-wrapper .card{
@@ -444,7 +448,7 @@ html {
         font-size: 20px;
     }
     .home .home-content .text-2 .name{
-        font-size: 30px !important;
+        font-size: 29px !important;
     }
     .home .home-content .text-3 {
         flex-direction: column;
