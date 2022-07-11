@@ -361,14 +361,23 @@ html {
         font-size: 25px;
     }
     .home .home-content .text-2 .name {
-        font-size: 45px;
+        font-size: 40px !important;
     }
     .home .home-content .text-3 {
-        font-size: 30px;
+        font-size: 30px;      
+        flex-wrap: wrap;
     }
     .about .about-content .left img {
         width: 300px;
         height: 275px;
+    }  
+    /* Project Section */
+    .carousel-project .card{
+        width: 100% !important;
+    }
+    /* Services Section */
+    .carousel-services .swiper-wrapper .card{
+        width: 100% !important;
     }
     /* Feedback Section */    
     .feedback .carousel .card img{  
@@ -391,6 +400,16 @@ html {
     .swiper-button-prev::after,
     .swiper-button-next::after{
         font-size: 25px !important;
+    }
+    /* Contact Section */
+    .contact .right{
+        margin: 30px 0 0 0;
+    }
+    .contact .right form .fields{
+        display: block !important;
+    }
+    .contact .right form .email{
+        margin-left: 0 !important;
     }
 }
 
