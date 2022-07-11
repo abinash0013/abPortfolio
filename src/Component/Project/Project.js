@@ -23,7 +23,7 @@ const Project = () => {
             projectName: "Delhi Golden Lottery",
             projectDescription:
                 "It is a lottery Website where the User can choose one number if a user wins by its lucky number it is double the amount.",
-            projectLink: "https://delhi-golden-lottery.herokuapp.com/",
+            projectLink: "https://delhigoldenlottery.netlify.app/",
             projectCode: "https://github.com/abinash0013/react-delhi",
         },
         {
@@ -47,8 +47,8 @@ const Project = () => {
             projectName: "My Portfolio",
             projectDescription:
                 "It is my personal Portfolio Website Where I can showcase my all work, skill, and services that I have Provided till now.",
-            projectLink: "https://github.com/abinash0013/abportfolio",
-            projectCode: "https://abinashsonar.netlify.app/",
+            projectLink: "https://abinashsonar.netlify.app/",
+            projectCode: "https://github.com/abinash0013/abportfolio",
         },
     ];
     const transition = { duration: 2, type: "spring" };
