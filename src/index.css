@@ -369,7 +369,7 @@ html {
     }
     .about .about-content .left img {
         width: 250px;
-        height: 275px;
+        height: 285px !important;
     }  
     /* Project Section */
     .carousel-project .card{
