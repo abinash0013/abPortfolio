@@ -31,7 +31,7 @@ const Project = () => {
             projectName: "Fitness Freak",
             projectDescription:
                 "This is a simple and Informative Fitness Website creating for the purpose of Learning and practicing of React Js.",
-            projectLink: "https://reactjs-gym.herokuapp.com",
+            projectLink: "https://fitnessfreak13.netlify.app/",
             projectCode: "https://github.com/abinash0013/gym",
         },
         // {
