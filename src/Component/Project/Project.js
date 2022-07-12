@@ -66,6 +66,38 @@ const Project = () => {
                 </motion.h2>
                 <div className="carousel-project">
                     <Swiper
+                        breakpoints={{
+                            // when window width is >= 300px
+                            300: {
+                                width: 300,
+                                slidesPerView: 2,
+                            },
+                            // when window width is >= 500px
+                            500: {
+                                width: 500,
+                                slidesPerView: 2,
+                            },
+                            // when window width is >= 690px
+                            690: {
+                                width: 690,
+                                slidesPerView: 2,
+                            },
+                            // when window width is >= 947px
+                            947: {
+                                width: 947,
+                                slidesPerView: 3,
+                            },
+                            // when window width is >= 991px
+                            991: {
+                                width: 991,
+                                slidesPerView: 3,
+                            },
+                            // when window width is >= 1104px
+                            1104: {
+                                width: 1104,
+                                slidesPerView: 3,
+                            },
+                        }}
                         spaceBetween={30}
                         slidesPerView={3}
                         grabCursor={true}
