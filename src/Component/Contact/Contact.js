@@ -62,7 +62,10 @@ const Contact = () => {
                         <div className="text" id="hireMe">
                             Message Me
                         </div>
-                        <form action="https://formspree.io/f/xnqrvnnq" method="POST">
+                        <form
+                            action="https://formspree.io/f/xnqrvnnq"
+                            method="POST"
+                        >
                             <div className="fields">
                                 <div className="field name">
                                     <input
@@ -70,6 +73,7 @@ const Contact = () => {
                                         name="name"
                                         id="name"
                                         placeholder="Enter Name"
+                                        autoComplete="off"
                                         required
                                     />
                                 </div>
@@ -79,6 +83,7 @@ const Contact = () => {
                                         name="email"
                                         id="email"
                                         placeholder="Enter Email"
+                                        autoComplete="off"
                                         required
                                     />
                                 </div>
@@ -89,6 +94,7 @@ const Contact = () => {
                                     name="phone"
                                     id="phone"
                                     placeholder="Enter Phone Number"
+                                    autoComplete="off"
                                     required
                                 />
                             </div>
@@ -98,6 +104,7 @@ const Contact = () => {
                                     name="subject"
                                     id="subject"
                                     placeholder="Enter Subject"
+                                    autoComplete="off"
                                     required
                                 />
                             </div>
@@ -106,11 +113,16 @@ const Contact = () => {
                                     cols="30"
                                     rows="10"
                                     placeholder="Describe Project..."
+                                    autoComplete="off"
                                     required
                                 ></textarea>
                             </div>
                             <div className="button">
-                                <input type="submit" className="mainButton" value="Send" />
+                                <input
+                                    type="submit"
+                                    className="mainButton"
+                                    value="Send"
+                                />
                             </div>
                         </form>
                     </div>
@@ -121,3 +133,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
