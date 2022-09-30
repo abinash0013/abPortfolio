@@ -62,7 +62,7 @@ const Contact = () => {
                         <div className="text" id="hireMe">
                             Message Me
                         </div>
-                        <form action="#">
+                        <form action="https://formspree.io/f/xnqrvnnq" method="POST">
                             <div className="fields">
                                 <div className="field name">
                                     <input
