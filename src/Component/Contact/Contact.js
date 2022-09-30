@@ -1,6 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import { Link } from "react-scroll";
 import User from "@iconscout/react-unicons/icons/uil-user";
 import Email from "@iconscout/react-unicons/icons/uil-envelope";
 import Address from "@iconscout/react-unicons/icons/uil-map-marker";
