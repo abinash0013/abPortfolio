@@ -15,7 +15,7 @@ const Banner = () => {
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                 >
-                    <div className="text-1">Hello.</div>
+                    <div className="text-1">Hello..</div>
                     <div className="text-2">
                         I am <span className="name">Abinash Sonar</span>
                     </div>
